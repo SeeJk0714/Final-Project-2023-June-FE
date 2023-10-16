@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+.journal-card {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+}
+.journal-card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #3ecd5e;
+    height: 70px;
+    width: 70px;
+    border-radius: 80px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.45s ease-out;
+}
+
+.journal-card:hover:before {
+    transform: scale(21);
+}
+.journal-card:hover {
+    transition: all 0.5s ease-out;
+    color: rgb(0, 0, 0);
+}
+
+.plan-card {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+}
+.plan-card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #952aff;
+    height: 70px;
+    width: 70px;
+    border-radius: 80px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.45s ease-out;
+}
+
+.plan-card:hover:before {
+    transform: scale(21);
+}
+.plan-card:hover {
+    transition: all 0.5s ease-out;
+    color: rgb(0, 0, 0);
+}
+
+.todo-card {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+}
+.todo-card:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #4c49ea;
+    height: 70px;
+    width: 70px;
+    border-radius: 80px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.45s ease-out;
+}
+
+.todo-card:hover:before {
+    transform: scale(21);
+}
+.todo-card:hover {
+    transition: all 0.5s ease-out;
+    color: rgb(0, 0, 0);
+}
